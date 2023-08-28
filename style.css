@@ -18,6 +18,12 @@ header {
 nav {
   margin-right: 190px;
 }
+/*  */
+.container {
+  margin: 0 auto;
+  max-width: 1260px;
+  padding: 0px 15px;
+}
 .flexdiv {
   display: flex;
   align-items: center;
@@ -71,6 +77,9 @@ nav {
   display: flex;
   align-items: center;
 }
+.ul-system > li:not(:last-child) {
+  margin-right: 40px;
+}
 .login > p {
   color: rgba(255, 255, 255, 0.78);
   font-family: 'Poppins', sans-serif;
@@ -80,8 +89,12 @@ nav {
   line-height: normal;
   opacity: 0.78;
 }
-.sign-up {
+.li-button {
+  border-radius: 8px;
+  background: #ff6e30;
+  padding: 12px 28px;
 }
+
 .signup > p {
   color: #fdf5ff;
   font-family: 'Poppins', sans-serif;
@@ -90,3 +103,11 @@ nav {
   font-weight: 600;
   line-height: normal;
 }
+/*  */
+/* .signup {
+  width: 118px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #ff6e30;
+} */
