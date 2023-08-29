@@ -13,7 +13,21 @@ body {
   background: #1e252b;
 }
 header {
-  padding: 30px 0px;
+  padding: 25px 0px;
+}
+footer::before {
+  content: '';
+  display: block;
+  background: rgba(255, 255, 255, 0.15);
+  width: 100%;
+  height: 0.5px;
+  /*  */
+  margin-bottom: 70px;
+}
+footer {
+  /*  */
+  padding-top: 70px;
+  padding-bottom: 100px;
 }
 nav {
   margin-right: 190px;
@@ -28,6 +42,7 @@ nav {
   display: flex;
   align-items: center;
 }
+/* header starts */
 .logo-header {
   display: flex;
   align-items: center;
@@ -111,3 +126,127 @@ nav {
   border-radius: 8px;
   background: #ff6e30;
 } */
+/* main begins */
+.contributor-section {
+  padding: 240px 0px;
+}
+.contributor-section-h3 {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 25px;
+}
+.contributor-section-p {
+  color: rgba(255, 255, 255, 0.55);
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 100px;
+}
+
+/* footer starts */
+.flexdiv-footer {
+  display: flex;
+}
+.copyright {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.description {
+  color: rgba(255, 255, 255, 0.55);
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 178.571% */
+}
+.footer-container {
+  max-width: 1260px;
+  /*  */
+  margin: 0 auto;
+  padding-right: 15px;
+}
+.companyinfo-div {
+  width: 260px;
+  margin-right: 160px;
+}
+.footerlogo-div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.footerlogo-div > p {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Poppins';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.footer-logo {
+  width: 38px;
+  height: 38px;
+}
+
+.contactus-ul > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+[href='tel:+621987463'] > p {
+  color: rgba(255, 255, 255, 0.55);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.p {
+  color: rgba(255, 255, 255, 0.55);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+[href='mailto:antools@awesome.com'] > p {
+  color: rgba(255, 255, 255, 0.55);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.h3 {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.categories-ul > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.categories-a {
+  color: rgba(255, 255, 255, 0.55);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.div-nth:not(:last-child) {
+  margin-right: 110px;
+}
