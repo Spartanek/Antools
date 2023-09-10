@@ -13,7 +13,8 @@ body {
   background: #1e252b;
 }
 header {
-  padding: 25px 0px;
+  padding-top: 25px;
+  padding-bottom: 70px;
 }
 footer::before {
   content: '';
@@ -84,7 +85,9 @@ nav {
   width: 18px;
   height: 18px;
 }
-
+.svg-nav:hover {
+  stroke: #ff6e30;
+}
 .ul-system {
   display: flex;
   align-items: center;
@@ -126,7 +129,15 @@ nav {
 /* main begins */
 /* hero */
 .section-hero {
-  padding-top: 30px;
+  padding-top: 55px;
+}
+.section-hero {
+  background: url(./assets/imgs/Illustration.png);
+  background-size: auto;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
 }
 .container-hero {
   max-width: 1245px;
@@ -175,13 +186,12 @@ nav {
   position: relative;
 }
 .wrapper-input {
-  width: 500px;
+  width: 498px;
   height: 64px;
   border-radius: 15px;
   background: #283036;
-  padding: 8px 0px;
+  /* padding: 8px 0px; */
   padding-left: 55px;
-  color: ;
 }
 .wrapper-input::placeholder {
   color: rgba(255, 255, 255, 0.38);
@@ -194,6 +204,11 @@ nav {
 .wrapper-button {
   position: absolute;
   right: 11px;
+  top: 0px;
+  bottom: 8px;
+  width: 130.435px;
+  height: 48px;
+  display: block;
   padding: 12px 36px;
   border-radius: 8px;
   background: #ff6e30;
@@ -209,6 +224,10 @@ nav {
 .search-hero {
   position: absolute;
   left: 11px;
+  width: 24px;
+  height: 24px;
+  fill: rgba(255, 255, 255, 0.38);
+  stroke: rgba(255, 255, 255, 0.38);
 }
 .wrapp {
   top: -4.5px;
@@ -224,14 +243,45 @@ nav {
 .linkdiv-ul > li:not(:last-child) {
   margin-right: 30px;
 }
-/*  */
-top: -4.5px;
-width: 24.08px;
+.mostPopularTools-section {
+  padding: 200px 0px;
+}
+.mostpopulartools-div > h3 {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 25px;
+}
+.mostpopulartools-div > p {
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0 auto;
+  width: 427px;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+}
+.mostPopularTools-ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 58px;
+  grid-row-gap: 100px;
+  grid-template-rows: repeat(2, 1fr);
+}
+.mostPopularTools-ul > li {
+  padding: 33px;
+}
 
 .name-tool {
   color: rgba(255, 255, 255, 0.78);
   font-family: 'Poppins';
-  font-size: 24px;
+  font-size: 23px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -251,11 +301,34 @@ width: 24.08px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  margin-top: 30px;
 }
 .like-svg {
   width: 28px;
   height: 28px;
   margin-right: 25px;
+  fill: rgba(255, 255, 255, 0.38);
+}
+.loadmore-button {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #1e252b;
+  padding: 17px 38px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.loadmore-button > p {
+  color: #ff6e30;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.newcomer-section {
+  padding-top: 220px;
+  padding-bottom: 235px;
 }
 .newcomer-ul {
   display: grid;
@@ -268,15 +341,17 @@ width: 24.08px;
   border-radius: 15px;
   background: #1e252b;
   padding: 28px 21px;
-  background: ;
 }
+
 .folder-svg {
   width: 30px;
   height: 30px;
-  margin-right: 50px;
 }
 .svg-description {
   display: flex;
+}
+.svg-text-div {
+  margin-left: 30px;
 }
 .flexdiv-newcomer {
   display: flex;
@@ -287,12 +362,17 @@ width: 24.08px;
 .customer-options {
   display: flex;
   align-items: center;
+  margin-top: 30px;
 }
 .button-customerOption {
   border-radius: 8px;
   background: transparent;
   padding: 9px 35px;
   border: none;
+  margin-left: 50px;
+}
+.button-adding {
+  margin-left: 130px;
 }
 .button-customerOption > p {
   color: rgba(255, 255, 255, 0.55);
@@ -377,9 +457,7 @@ font-style .brands-section {
   width: 194px;
   height: 44px;
 }
-.brands-ul > li:not footer {
-  padding-bottom: 100px;
-}
+
 .flexdiv-footer {
   display: flex;
 }
@@ -400,11 +478,6 @@ font-style .brands-section {
   font-weight: 400;
   line-height: 25px;
   display: flex;
-}
-.footer-container {
-  max-width: 1260px;
-  margin: 0 auto;
-  padding-right: 15px;
 }
 .companyinfo-div {
   width: 260px;
