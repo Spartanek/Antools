@@ -288,6 +288,8 @@ nav {
 }
 .mostPopularTools-ul > li {
   padding: 33px;
+  border-radius: 15px;
+  background: #1e252b;
 }
 
 .name-tool {
