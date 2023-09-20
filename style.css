@@ -11,6 +11,7 @@ html {
 }
 body {
   background: #1e252b;
+  scroll-behavior: smooth;
 }
 header {
   padding-top: 25px;
@@ -619,4 +620,43 @@ font-style .brands-section {
 }
 .div-nth:not(:last-child) {
   margin-right: 110px;
+}
+/* slider */
+.swiper {
+  /* перевірти */
+  width: 600px;
+  height: 300px;
+}
+.good-link {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.good-link:hover {
+  background: #ff6e30;
+}
+.good-link {
+  color: rgba(255, 255, 255, 0.55);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.dropdown-menu {
+  background: grey;
+}
+.dropdown-item:hover {
+  background: #ff6e30 !important;
+}
+.good-link:focus {
+  background: #ff6e30 !important;
+}
+.dropdown-item {
+  color: rgba(255, 255, 255, 0.55);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
