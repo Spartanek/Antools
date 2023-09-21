@@ -474,6 +474,7 @@ font-style .brands-section {
 }
 .input-footer-section {
   padding-bottom: 240px;
+  padding-top: 250px;
 }
 .wrapper-form-second {
   margin: 0 auto;
@@ -622,11 +623,76 @@ font-style .brands-section {
   margin-right: 110px;
 }
 /* slider */
+
 .swiper {
   /* перевірти */
-  width: 600px;
-  height: 300px;
+  width: 1194px !important;
+  height: 492px;
+  margin: 0 auto;
 }
+.swiper-wrapper {
+  box-sizing: content box;
+}
+.swiper-slide {
+  width: 1194px !important;
+  display: flex;
+}
+.biography-div {
+  position: absolute;
+  bottom: 5%;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(40, 48, 54, 0.2);
+  backdrop-filter: blur(25px);
+  display: flex;
+  flex-direction: column;
+  padding: 10px 22px;
+  left: 10%;
+}
+.biography-name {
+  color: rgba(255, 253, 253, 0.78);
+  font-family: 'Poppins';
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.39px;
+}
+.biography-job {
+  color: rgba(255, 253, 253, 0.55);
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.biography-quote {
+  color: rgba(255, 255, 255, 0.78);
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 214.286% */
+  letter-spacing: 0.21px;
+  width: 393px;
+  margin-left: 60px;
+  position: relative;
+}
+.biography-quote:before {
+  content: '';
+  display: block;
+  background-image: url(./assets/imgs/“.png);
+  width: 101px;
+  height: 97px;
+  position: absolute;
+  right: 340px;
+  bottom: 140px;
+}
+.swiper-cratedcontainer {
+  display: flex;
+  align-items: center;
+}
+/*  */
 .good-link {
   background: transparent;
   border: none;
@@ -643,6 +709,26 @@ font-style .brands-section {
   font-weight: 500;
   line-height: normal;
 }
+
+/* .biography-div + p {
+  color: rgba(255, 253, 253, 0.78);
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.39px;
+}
+.biography-div + p + p {
+  color: rgba(255, 253, 253, 0.55);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+} */
+
+/*  */
 .dropdown-menu {
   background: grey;
 }

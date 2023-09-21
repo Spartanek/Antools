@@ -2,7 +2,7 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
   autoplay: {
-    delay: 1000,
+    delay: 2500,
     //   залежить від scroll-bar'у
   },
 
