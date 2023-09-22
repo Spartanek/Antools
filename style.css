@@ -639,7 +639,7 @@ font-style .brands-section {
 }
 .biography-div {
   position: absolute;
-  bottom: 5%;
+  bottom: 3%;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(40, 48, 54, 0.2);
@@ -647,7 +647,7 @@ font-style .brands-section {
   display: flex;
   flex-direction: column;
   padding: 10px 22px;
-  left: 10%;
+  left: 25%;
 }
 .biography-name {
   color: rgba(255, 253, 253, 0.78);
@@ -691,7 +691,31 @@ font-style .brands-section {
 .swiper-cratedcontainer {
   display: flex;
   align-items: center;
+  width: 900px;
+  margin: 0 auto;
 }
+.swiper-button-prev {
+  color: rgba(255, 255, 255, 0.28) !important;
+}
+.swiper-button-next {
+  color: rgba(255, 255, 255, 0.28) !important;
+}
+.swiper-button-prev:hover {
+  color: #ff6e30 !important;
+}
+.swiper-button-next:hover {
+  color: #ff6e30 !important;
+}
+
+/* дивина */
+
+.swiper-pagination-bullet {
+  background-color: #ff6e30;
+  width: 45px;
+  height: 8px;
+  border-radius: 4px;
+}
+
 /*  */
 .good-link {
   background: transparent;
