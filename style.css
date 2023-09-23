@@ -76,6 +76,14 @@ nav {
   font-weight: 500;
   line-height: normal;
 }
+.nav-link:hover {
+  background-color: #ff6e30;
+  padding: 7px 7px;
+  border-radius: 8px;
+}
+.nav-link:hover > p {
+  color: #fff;
+}
 .link-svg {
   display: flex;
   align-items: center;
@@ -104,6 +112,15 @@ nav {
   font-weight: 600;
   line-height: normal;
   opacity: 0.78;
+}
+/* problem with background */
+/* .login-hover:hover {
+  background-color: #ff6e30;
+  padding: 7px;
+  width: 44px;
+} */
+.login:hover > p {
+  color: #ff6e30;
 }
 .li-button {
   border-radius: 8px;
@@ -153,6 +170,10 @@ nav {
 .hero-svg {
   width: 36px;
   height: 36px;
+  fill: rgba(255, 255, 255, 0.78);
+}
+.hero-svg:hover {
+  fill: #ff6e30;
 }
 .interactiveHeader-div > h2 {
   color: rgba(255, 255, 255, 0.9);
@@ -223,15 +244,25 @@ nav {
   display: block;
   padding: 12px 36px;
   border-radius: 8px;
+  background: transparent;
+  border: none;
+}
+.wrapper-button:hover {
   background: #ff6e30;
 }
-.wrapper-button > p {
+.wrapper-button:hover > p {
   color: #fff;
+}
+.wrapper-button > p {
+  color: #ff6e30;
   font-family: 'Poppins';
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+.wrapper-button:active {
+  background: green;
 }
 .search-hero {
   position: absolute;
@@ -279,6 +310,7 @@ nav {
   font-weight: 500;
   line-height: 30px;
   text-align: center;
+  margin-bottom: 90px;
 }
 .mostPopularTools-ul {
   display: grid;
@@ -292,8 +324,38 @@ nav {
   border-radius: 15px;
   background: #1e252b;
 }
-
-.name-tool {
+.mostPopularTools-ul > li:hover {
+  background: rgb(33, 41, 46);
+  background: linear-gradient(12deg, rgba(33, 41, 46, 1) 84%, rgba(74, 47, 51, 1) 93%);
+  transform: translateY(-20px);
+}
+.mostPopularTools-ul > li:hover > .svg-description > .svg-text-div > .availability {
+  color: #ffa537;
+}
+.mostPopularTools-ul > li:hover > .customer-options > .button-customerOption {
+  background-color: #ff6e30;
+}
+.mostPopularTools-ul > li:hover > .customer-options > .button-customerOption > p {
+  color: white;
+}
+.mostPopularTools-ul > li:hover {
+  width: 392px;
+  height: 294px;
+}
+.mostPopularTools-ul > li {
+  width: 392px;
+  height: 294px;
+}
+.mostPopularTools-ul > li:hover > .customer-options > .like-svg {
+  fill: rgba(253, 59, 65, 1);
+  border-radius: 8px;
+  background: #283036;
+  box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+  padding: 7px;
+  width: 44px;
+  height: 44px;
+}
+.svg-text-div .name-tool {
   color: rgba(255, 255, 255, 0.78);
   font-family: 'Poppins';
   font-size: 23px;
@@ -341,6 +403,13 @@ nav {
   font-weight: 500;
   line-height: normal;
 }
+.loadmore-button:hover {
+  background-color: #ff6e30;
+  color: #fdf5ff;
+}
+.loadmore-button:hover > p {
+  color: #fdf5ff;
+}
 .newcomer-section {
   padding-top: 220px;
   padding-bottom: 235px;
@@ -356,8 +425,29 @@ nav {
   border-radius: 15px;
   background: #1e252b;
   padding: 28px 21px;
+  width: 288px;
+  height: 284px;
 }
 
+.newcomer-ul > li:hover {
+  background: rgb(33, 41, 46);
+  background: linear-gradient(12deg, rgba(33, 41, 46, 1) 84%, rgba(74, 47, 51, 1) 93%);
+  transform: translateY(-20px);
+  width: 288px;
+  height: 284px;
+}
+.newcomer-ul > li:hover > .svg-description > .svg-text-div > .availability {
+  color: #ffa537;
+}
+.newcomer-ul > li:hover > .customer-options > .like-svg {
+  fill: rgba(253, 59, 65, 1);
+  border-radius: 8px;
+  background: #283036;
+  box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+  padding: 7px;
+  width: 44px;
+  height: 44px;
+}
 .folder-svg {
   width: 30px;
   height: 30px;
@@ -419,16 +509,23 @@ nav {
 
 .newcomer-button {
   border-radius: 8px;
-  background: #ff6e30;
+  background: transparent;
   padding: 15px 40px;
+  border: none;
 }
 .newcomer-button > p {
-  color: #fff;
+  color: #ff6e30;
   font-family: 'Poppins';
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.newcomer-button:hover {
+  background-color: #ff6e30;
+}
+.newcomer-button:hover > p {
+  color: #fff;
 }
 font-style .brands-section {
   padding: 100px 0px;
@@ -436,7 +533,8 @@ font-style .brands-section {
 .backgroundBrands-div {
   border-radius: 25px;
   border: 2px solid rgba(255, 255, 255, 0.05);
-  background: rgba(44, 53, 61, 0.2);
+  background: rgb(74, 47, 51);
+  background: linear-gradient(168deg, rgba(74, 47, 51, 1) 8%, rgba(33, 41, 46, 1) 16%);
   backdrop-filter: blur(25px);
   padding: 55px 83px;
 }
@@ -519,15 +617,25 @@ font-style .brands-section {
   padding: 12px 34px;
   /* padding:12px 35px; */
   border-radius: 8px;
-  background: #ff6e30;
+  background: transparent;
+  border: none;
 }
 .wrapper-button-second > p {
-  color: #fff;
+  color: #ff6e30;
   font-family: 'Poppins';
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+.wrapper-button-second:hover {
+  background: #ff6e30;
+}
+.wrapper-button-second:hover > p {
+  color: #fff;
+}
+.wrapper-button-second:active {
+  background: green;
 }
 /* footer */
 .flexdiv-footer {
@@ -550,7 +658,9 @@ font-style .brands-section {
   font-weight: 400;
   line-height: 25px;
   display: flex;
+  width: 260px;
 }
+
 .companyinfo-div {
   width: 260px;
   margin-right: 160px;
@@ -607,6 +717,20 @@ font-style .brands-section {
   font-weight: 500;
   line-height: normal;
   margin-bottom: 20px;
+  width: 144px;
+}
+.companyinfo-ul > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+/* difficulties */
+.p:hover {
+  color: #ff6e30;
+}
+[href='tel:+621987463']:hover > p {
+  color: #ff6e30;
+}
+[href='mailto:antools@awesome.com']:hover > p {
+  color: #ff6e30;
 }
 .categories-ul > li:not(:last-child) {
   margin-bottom: 10px;
@@ -618,6 +742,9 @@ font-style .brands-section {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.categories-a:hover > p {
+  color: #ff6e30;
 }
 .div-nth:not(:last-child) {
   margin-right: 110px;
@@ -785,4 +912,12 @@ font-style .brands-section {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.hu__hu__ {
+  animation: hu__hu__ infinite 2s ease-in-out;
+}
+@keyframes hu__hu__ {
+  50% {
+    transform: translateY(10px);
+  }
 }
