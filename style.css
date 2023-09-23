@@ -627,27 +627,37 @@ font-style .brands-section {
 .swiper {
   /* перевірти */
   width: 1194px !important;
-  height: 492px;
+  /* height: px; */
   margin: 0 auto;
 }
 .swiper-wrapper {
-  box-sizing: content box;
+  box-sizing: content-box;
 }
+/* -pay attention */
 .swiper-slide {
-  width: 1194px !important;
+  /* width: 1194px !important; */
   display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 600px; */
+}
+.img-biography {
+  margin-right: 70px;
 }
 .biography-div {
-  position: absolute;
-  bottom: 3%;
+  /* position: absolute; */
+  position: relative;
+  /* bottom: 5%; */
+  bottom: 120px;
+  left: 130px;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(40, 48, 54, 0.2);
   backdrop-filter: blur(25px);
-  display: flex;
-  flex-direction: column;
-  padding: 10px 22px;
-  left: 25%;
+  padding: 10px 20px;
+  width: 265px;
+  height: 91px;
+  /* left: 25%; */
 }
 .biography-name {
   color: rgba(255, 253, 253, 0.78);
@@ -675,8 +685,9 @@ font-style .brands-section {
   line-height: 30px; /* 214.286% */
   letter-spacing: 0.21px;
   width: 393px;
-  margin-left: 60px;
+  /* margin-left: 60px; */
   position: relative;
+  bottom: 50px;
 }
 .biography-quote:before {
   content: '';
@@ -688,11 +699,14 @@ font-style .brands-section {
   right: 340px;
   bottom: 140px;
 }
-.swiper-cratedcontainer {
+.swiper-createdcontainer {
   display: flex;
   align-items: center;
-  width: 900px;
+  /* width: 900px;
   margin: 0 auto;
+  justify-content: center;
+  position: relative;
+  bottom: 50px; */
 }
 .swiper-button-prev {
   color: rgba(255, 255, 255, 0.28) !important;
@@ -706,7 +720,9 @@ font-style .brands-section {
 .swiper-button-next:hover {
   color: #ff6e30 !important;
 }
-
+.swiper-pagination {
+  position: relative;
+}
 /* дивина */
 
 .swiper-pagination-bullet {
