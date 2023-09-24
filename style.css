@@ -114,13 +114,17 @@ nav {
   opacity: 0.78;
 }
 /* problem with background */
-/* .login-hover:hover {
+.login {
+}
+.login:hover {
   background-color: #ff6e30;
-  padding: 7px;
-  width: 44px;
-} */
+  display: block;
+  height: 40px;
+  width: 100px;
+}
 .login:hover > p {
   color: #ff6e30;
+  height: 40px;
 }
 .li-button {
   border-radius: 8px;
@@ -245,7 +249,7 @@ nav {
   padding: 12px 36px;
   border-radius: 8px;
   background: transparent;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .wrapper-button:hover {
   background: #ff6e30;
@@ -315,7 +319,7 @@ nav {
 .mostPopularTools-ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 58px;
+  grid-column-gap: 25px;
   grid-row-gap: 100px;
   grid-template-rows: repeat(2, 1fr);
 }
@@ -346,14 +350,9 @@ nav {
   width: 392px;
   height: 294px;
 }
-.mostPopularTools-ul > li:hover > .customer-options > .like-svg {
-  fill: rgba(253, 59, 65, 1);
-  border-radius: 8px;
-  background: #283036;
-  box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
-  padding: 7px;
-  width: 44px;
-  height: 44px;
+
+.mostPopularTools-ul > li:hover > .customer-options > .like-div {
+  background: rgba(40, 48, 54, 1);
 }
 .svg-text-div .name-tool {
   color: rgba(255, 255, 255, 0.78);
@@ -383,7 +382,6 @@ nav {
 .like-svg {
   width: 28px;
   height: 28px;
-  margin-right: 25px;
   fill: rgba(255, 255, 255, 0.38);
 }
 .loadmore-button {
@@ -436,17 +434,30 @@ nav {
   width: 288px;
   height: 284px;
 }
+.like-div {
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+  width: 44px;
+  height: 44px;
+  /* тільки так працює */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 18px;
+}
 .newcomer-ul > li:hover > .svg-description > .svg-text-div > .availability {
   color: #ffa537;
 }
-.newcomer-ul > li:hover > .customer-options > .like-svg {
+.like-div:hover > .like-svg {
   fill: rgba(253, 59, 65, 1);
-  border-radius: 8px;
-  background: #283036;
-  box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
-  padding: 7px;
-  width: 44px;
-  height: 44px;
+
+  width: 28px;
+  height: 28px;
+}
+.newcomer-ul > li:hover > .customer-options > .like-div {
+  background: rgba(40, 48, 54, 1);
 }
 .folder-svg {
   width: 30px;
@@ -511,7 +522,7 @@ nav {
   border-radius: 8px;
   background: transparent;
   padding: 15px 40px;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .newcomer-button > p {
   color: #ff6e30;
@@ -614,11 +625,11 @@ font-style .brands-section {
   width: 130.435px;
   height: 48px;
   display: block;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 12px 34px;
   /* padding:12px 35px; */
   border-radius: 8px;
   background: transparent;
-  border: none;
 }
 .wrapper-button-second > p {
   color: #ff6e30;
