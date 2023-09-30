@@ -1,4 +1,5 @@
 :root {
+  --color-focus: #ff6e30;
 }
 a {
   text-decoration: none;
@@ -76,11 +77,7 @@ nav {
   font-weight: 500;
   line-height: normal;
 }
-.nav-link:hover {
-  background-color: #ff6e30;
-  padding: 7px 7px;
-  border-radius: 8px;
-}
+
 .nav-link:hover > p {
   color: #fff;
 }
@@ -95,7 +92,7 @@ nav {
   height: 18px;
 }
 .svg-nav:hover {
-  stroke: #ff6e30;
+  stroke: var(--color-focus);
 }
 .ul-system {
   display: flex;
@@ -114,21 +111,12 @@ nav {
   opacity: 0.78;
 }
 /* problem with background */
-.login {
-}
-.login:hover {
-  background-color: #ff6e30;
-  display: block;
-  height: 40px;
-  width: 100px;
-}
 .login:hover > p {
-  color: #ff6e30;
-  height: 40px;
+  color: var(--color-focus);
 }
 .li-button {
   border-radius: 8px;
-  background: #ff6e30;
+  background: var(--color-focus);
   padding: 12px 28px;
 }
 
@@ -177,7 +165,7 @@ nav {
   fill: rgba(255, 255, 255, 0.78);
 }
 .hero-svg:hover {
-  fill: #ff6e30;
+  fill: var(--color-focus);
 }
 .interactiveHeader-div > h2 {
   color: rgba(255, 255, 255, 0.9);
@@ -200,7 +188,7 @@ nav {
   margin-bottom: 60px;
 }
 .point {
-  color: #ff6e30;
+  color: var(--color-focus);
   font-family: 'Poppins', sans-serif;
   font-size: 50px;
   font-style: normal;
@@ -252,14 +240,14 @@ nav {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .wrapper-button:hover {
-  background: #ff6e30;
+  background: var(--color-focus);
 }
 .wrapper-button:hover > p {
   color: #fff;
 }
 .wrapper-button > p {
-  color: #ff6e30;
-  font-family: 'Poppins';
+  color: var(--color-focus);
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -297,7 +285,7 @@ nav {
 .mostpopulartools-div > h3 {
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 500;
@@ -308,7 +296,7 @@ nav {
   color: rgba(255, 255, 255, 0.55);
   margin: 0 auto;
   width: 427px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -337,7 +325,7 @@ nav {
   color: #ffa537;
 }
 .mostPopularTools-ul > li:hover > .customer-options > .button-customerOption {
-  background-color: #ff6e30;
+  background-color: var(--color-focus);
 }
 .mostPopularTools-ul > li:hover > .customer-options > .button-customerOption > p {
   color: white;
@@ -356,7 +344,7 @@ nav {
 }
 .svg-text-div .name-tool {
   color: rgba(255, 255, 255, 0.78);
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 23px;
   font-style: normal;
   font-weight: 500;
@@ -364,7 +352,7 @@ nav {
 }
 .availability {
   color: rgba(255, 165, 55, 0.55);
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -372,7 +360,7 @@ nav {
 }
 .desc-text-programm {
   color: rgba(255, 255, 255, 0.55);
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -394,15 +382,15 @@ nav {
   margin-top: 100px;
 }
 .loadmore-button > p {
-  color: #ff6e30;
-  font-family: 'Poppins';
+  color: var(--color-focus);
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 .loadmore-button:hover {
-  background-color: #ff6e30;
+  background-color: var(--color-focus);
   color: #fdf5ff;
 }
 .loadmore-button:hover > p {
@@ -492,7 +480,7 @@ nav {
 }
 .button-customerOption > p {
   color: rgba(255, 255, 255, 0.55);
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
 
   font-style: normal;
@@ -501,7 +489,7 @@ nav {
 }
 .newcomer-div1 > h3 {
   color: rgba(255, 255, 255, 0.9);
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 500;
@@ -510,7 +498,7 @@ nav {
 }
 .newcomer-div1 > p {
   color: rgba(255, 255, 255, 0.55);
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -525,15 +513,15 @@ nav {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .newcomer-button > p {
-  color: #ff6e30;
-  font-family: 'Poppins';
+  color: var(--color-focus);
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 .newcomer-button:hover {
-  background-color: #ff6e30;
+  background-color: var(--color-focus);
 }
 .newcomer-button:hover > p {
   color: #fff;
@@ -551,7 +539,7 @@ font-style .brands-section {
 }
 .brands-h3 {
   color: rgba(255, 255, 255, 0.8);
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -632,15 +620,15 @@ font-style .brands-section {
   background: transparent;
 }
 .wrapper-button-second > p {
-  color: #ff6e30;
-  font-family: 'Poppins';
+  color: var(--color-focus);
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 .wrapper-button-second:hover {
-  background: #ff6e30;
+  background: var(--color-focus);
 }
 .wrapper-button-second:hover > p {
   color: #fff;
@@ -654,7 +642,7 @@ font-style .brands-section {
 }
 .copyright {
   color: rgba(255, 255, 255, 0.9);
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -663,7 +651,7 @@ font-style .brands-section {
 }
 .description {
   color: rgba(255, 255, 255, 0.55);
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -683,7 +671,7 @@ font-style .brands-section {
 }
 .footerlogo-div > p {
   color: rgba(255, 255, 255, 0.9);
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -735,13 +723,13 @@ font-style .brands-section {
 }
 /* difficulties */
 .p:hover {
-  color: #ff6e30;
+  color: var(--color-focus);
 }
 [href='tel:+621987463']:hover > p {
-  color: #ff6e30;
+  color: var(--color-focus);
 }
 [href='mailto:antools@awesome.com']:hover > p {
-  color: #ff6e30;
+  color: var(--color-focus);
 }
 .categories-ul > li:not(:last-child) {
   margin-bottom: 10px;
@@ -755,7 +743,7 @@ font-style .brands-section {
   line-height: normal;
 }
 .categories-a:hover > p {
-  color: #ff6e30;
+  color: var(--color-focus);
 }
 .div-nth:not(:last-child) {
   margin-right: 110px;
@@ -799,7 +787,7 @@ font-style .brands-section {
 }
 .biography-name {
   color: rgba(255, 253, 253, 0.78);
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 500;
@@ -808,7 +796,7 @@ font-style .brands-section {
 }
 .biography-job {
   color: rgba(255, 253, 253, 0.55);
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -816,7 +804,7 @@ font-style .brands-section {
 }
 .biography-quote {
   color: rgba(255, 255, 255, 0.78);
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -853,10 +841,10 @@ font-style .brands-section {
   color: rgba(255, 255, 255, 0.28) !important;
 }
 .swiper-button-prev:hover {
-  color: #ff6e30 !important;
+  color: var(--color-focus) !important;
 }
 .swiper-button-next:hover {
-  color: #ff6e30 !important;
+  color: var(--color-focus) !important;
 }
 .swiper-pagination {
   position: relative;
@@ -864,7 +852,7 @@ font-style .brands-section {
 /* дивина */
 
 .swiper-pagination-bullet {
-  background-color: #ff6e30;
+  background-color: var(--color-focus);
   width: 45px;
   height: 8px;
   border-radius: 4px;
@@ -877,7 +865,7 @@ font-style .brands-section {
   outline: none;
 }
 .good-link:hover {
-  background: #ff6e30;
+  background: var(--color-focus);
 }
 .good-link {
   color: rgba(255, 255, 255, 0.55);
@@ -911,10 +899,10 @@ font-style .brands-section {
   background: grey;
 }
 .dropdown-item:hover {
-  background: #ff6e30 !important;
+  background: var(--color-focus) !important;
 }
 .good-link:focus {
-  background: #ff6e30 !important;
+  background: var(--color-focus) !important;
 }
 .dropdown-item {
   color: rgba(255, 255, 255, 0.55);
